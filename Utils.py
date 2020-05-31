@@ -21,6 +21,7 @@ from qiskit.visualization import *
 from qiskit.circuit import Gate
 from qiskit.quantum_info.operators import Operator
 
+from IPython.display import Markdown as md
 
 
 
