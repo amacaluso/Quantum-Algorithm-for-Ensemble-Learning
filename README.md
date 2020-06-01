@@ -1,6 +1,6 @@
 # Quantum-Algorithm-for-Ensemble-Learning
 
-This repository contains the code to reproduce the results in the paper Quantum Algorithm for Ensemble Learning. The code for the implementation of the quantum circuit is based on [IBM Qiskit](https://qiskit.org/).
+This repository contains the code to reproduce the results in the paper *Quantum Algorithm for Ensemble Learning*. The code for the implementation of the quantum circuit is based on [IBM Qiskit](https://qiskit.org/).
 The three notebook comer also all the technical details omitted in the paper.
 
 ## Description
