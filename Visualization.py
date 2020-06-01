@@ -14,14 +14,18 @@ p0_clas = data_out.cAVG
 
 ax.plot(x, p0_ens, color='orange', label='qEnsemble', zorder=1, linewidth=5)
 ax.plot(x, p0_avg, color='steelblue', label='qAVG')
-ax.scatter(x, p0_clas, label='cAVG', color='sienna', zorder=2, linewidth=.5)
+ax.scatter(x, p0_clas, label='cEnsemble', color='sienna', zorder=2, linewidth=.5)
 
 #ax.set_xlim(-1.1, 1.1)
 # ax.set_ylim(-.2, 1.05)
 ax.grid(alpha=0.3)
-#ax.set_xticks(np.round(np.arange(-1, 1.1, .4), 1).tolist())
-#ax.set_title('Comparison', size=14)
-ax.tick_params(labelsize=12)
+ax.set_xticks(np.round(np.arange(0, 21, 5), 1).tolist())
+ax.set_xlabel('runs')
+ax.set_ylabel(r'Prob. of state $0$ ($target$ qubit)')
+
+
+ax.set_title('Quantum Simulator', size=12)
+ax.tick_params(labelsize=10)
 
 
 avg = data_out.qAVG_real
@@ -32,22 +36,24 @@ clas = data_out.cAVG
 
 ax1.plot(x, ens, color='orange', label='qEnsemble', zorder=1, linewidth=5)
 ax1.plot(x, avg, color='steelblue', label='qAVG')
-ax1.scatter(x, clas, label='cAVG', color='sienna', zorder=2, linewidth=.5)
+ax1.scatter(x, clas, label='cEnsemble', color='sienna', zorder=2, linewidth=.5)
 
 #ax.set_xlim(-1.1, 1.1)
 # ax.set_ylim(-.2, 1.05)
 ax1.grid(alpha=0.3)
-#ax.set_xticks(np.round(np.arange(-1, 1.1, .4), 1).tolist())
-#ax.set_title('Comparison', size=14)
-ax1.tick_params(labelsize=12)
+ax1.set_xticks(np.round(np.arange(0, 21, 5), 1).tolist())
+ax1.set_title('Real Device', size=12)
+ax1.tick_params(labelsize=10)
+ax1.set_xlabel('runs')
+
 # plt.legend(loc='lower center',# bbox_to_anchor=(0.5, -.15),
 #           ncol=3, fancybox=True, shadow=True, fontsize = 12)
 # handles, labels = ax.get_legend_handles_labels()
 # lgd=fig.legend(handles, labels, loc='lower center', ncol=3, bbox_to_anchor=(0.4, -.025))
 
-plt.savefig('output/experiments.png', dpi = 300, bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('output/experiments.png', dpi = 300, bbox_inches='tight')
 plt.show()
-plt.close()
+# plt.close()
 
 
 fig = plt.figure(figsize=(6, 1))
