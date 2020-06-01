@@ -1,1 +1,1 @@
-# Quantum-Algorithm-for-Ensemble-Learning
+# Quantum-Algorithm-for-Bagging-Ensemble-Classification
