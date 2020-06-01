@@ -190,7 +190,7 @@ def plot_multiple_experiments(runs, avg, ens, clas, filename='Simulator'):
     ax = plt.subplot()
     ax.plot(x, ens, color='orange', label='qEnsemble', zorder=1, linewidth=5)
     ax.plot(x, avg, color='steelblue', label='qAVG')
-    ax.scatter(x, clas, label='cAVG', color='sienna', zorder=2, linewidth=.5)
+    ax.scatter(x, clas, label='cEnsemble', color='sienna', zorder=2, linewidth=.5)
 
     #ax.set_xlim(-1.1, 1.1)
     # ax.set_ylim(-.2, 1.05)
