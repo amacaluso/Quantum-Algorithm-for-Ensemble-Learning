@@ -16,8 +16,7 @@ for i in range(runs):
     data = data.append(row, ignore_index=True)
 
 data.columns = ['x11', 'x12', 'x21', 'x22', 'x1_test', 'x2_test']
-# data.to_csv('output/data.csv', index=False)
-# data = data.loc[18:21,:]
+data.to_csv('output/data.csv', index=False)
 data
 
 # Execution on real device
