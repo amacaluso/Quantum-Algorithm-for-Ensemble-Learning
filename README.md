@@ -7,7 +7,7 @@ The three notebooks also cover all the technical details omitted in the paper.
 
 The code is organised as follows:
 - *Quantum Ensemble of Swap Test.ipynb* contains the details about the implementation of the ensemble of two swap tests. Also, it explains all equations omitted in the paper.
-- *Multiple Experiments for Quantum Ensemble (Simulator).ipynb* uses the quantum algorithm to produce the ensemble of two swap tests. It generates 20 small dataset and compare the results of quantum ensemble with the same algorithm computed classically. 
+- *Multiple Experiments for Quantum Ensemble (Simulator).ipynb* uses the quantum algorithm to produce the ensemble of two swap tests. It generates 20 small datasets and compare the results of quantum ensemble with the ensemble computed classically. 
 - *Quantum Swap Test.ipynb* explains in detail the swap test by performing also simulation considering a small dataset.
 
 
