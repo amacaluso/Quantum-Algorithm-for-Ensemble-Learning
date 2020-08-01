@@ -1,6 +1,6 @@
 # Quantum-Algorithm-for-Ensemble-Learning
 
-This repository contains the code to reproduce the results in the paper *Quantum Algorithm for Ensemble Learning*, that will be published in the proceedings at the [21st Italian Conference on Theoretical Computer Science (ICTCS 2020)](https://sites.google.com/view/ictcs-2020/home/accepted-papers)
+This repository contains the code to reproduce the results in the paper *Quantum Algorithm for Ensemble Learning*, that will be published in the proceedings at the [21st Italian Conference on Theoretical Computer Science (ICTCS 2020)](https://sites.google.com/view/ictcs-2020/home/accepted-papers),
 14-16 September 2020, Ischia, Italy. The code for the implementation of the quantum circuits uses the [IBM Qiskit](https://qiskit.org/) environment.
 The three notebooks also cover all the technical details omitted in the paper.
 
